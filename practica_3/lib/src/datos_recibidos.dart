@@ -1,0 +1,27 @@
+import 'package:flutter/material.dart';
+import 'package:practica_3/src/home_page.dart';
+
+class Datospage extends StatelessWidget {
+  final Data data;
+  Datospage({required this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Datos Recibidos"),
+        centerTitle: true,
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Los datos recibidos son:'),
+            Text("Nombre: ${data.nombre}"),
+            Text('Sexo: ${data.sexo}'),
+          ],
+        ),
+      ),
+    );
+  }
+}
