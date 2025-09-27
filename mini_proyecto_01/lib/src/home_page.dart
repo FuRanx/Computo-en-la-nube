@@ -13,20 +13,20 @@ class _HomePageState extends State<HomePage> {
   double estaturaValor = 1.60;
 
   String obtenerClasificacion(double imc) {
-    if (imc < 18) return 'Peso Bajo';
-    if (imc >= 18 && imc <= 24.9) return 'Normal';
-    if (imc >= 25 && imc <= 26.9) return 'Sobrepeso';
-    if (imc >= 27 && imc <= 29.9) return 'Obesidad Grado I';
-    if (imc >= 30 && imc <= 39.9) return 'Obesidad Grado II';
+    if (imc < 18.5) return 'Peso Bajo';
+    if (imc >= 18.5 && imc < 25) return 'Normal';
+    if (imc >= 25 && imc < 30) return 'Sobrepeso';
+    if (imc >= 30 && imc < 35) return 'Obesidad Grado I';
+    if (imc >= 35 && imc < 40) return 'Obesidad Grado II';
     return 'Obesidad Grado III';
   }
 
   String obtenerImagen(double imc) {
-    if (imc < 18) return 'assets/images/bajo_peso.jpg';
-    if (imc >= 18 && imc <= 24.9) return 'assets/images/normal.jpg';
-    if (imc >= 25 && imc <= 26.9) return 'assets/images/sobrepeso.jpg';
-    if (imc >= 27 && imc <= 29.9) return 'assets/images/obesidad1.jpg';
-    if (imc >= 30 && imc <= 39.9) return 'assets/images/obesidad2.jpg';
+    if (imc < 18.5) return 'assets/images/bajo_peso.jpg';
+    if (imc >= 18.5 && imc < 25) return 'assets/images/normal.jpg';
+    if (imc >= 25 && imc < 30) return 'assets/images/sobrepeso.jpg';
+    if (imc >= 30 && imc < 35) return 'assets/images/obesidad1.jpg';
+    if (imc >= 35 && imc < 40) return 'assets/images/obesidad2.jpg';
     return 'assets/images/obesidad3.jpg';
   }
 
